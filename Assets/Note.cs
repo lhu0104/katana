@@ -1,21 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Note : MonoBehaviour
+
+[Serializable]
+public class NoteData
 {
-    float speed = 1f;
-    private void Update()
+    public float time;
+    public int direction;
+    public NoteData(float time)
     {
-        this.transform.Translate(Vector3.forward * Time.deltaTime, Space.Self);    
+        this.time = time;
+        direction = 1;
     }
-    #region Member Variables
-    #endregion
-    #region Properties
-    #endregion
-    #region Public Methods
-    #endregion
-    #region Protected Methods
-    #endregion
-    #region Private Methods
-    #endregion
 }

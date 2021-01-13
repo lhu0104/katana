@@ -8,4 +8,8 @@ public class Player : MonoBehaviour
     {
         animator.SetTrigger(triggerName);
     }
+    public void Look(Direction direction)
+    {
+
+    }
 }
